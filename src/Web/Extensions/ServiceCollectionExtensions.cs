@@ -17,7 +17,13 @@ public static class ServiceCollectionExtensions
 {
     public static void AddDatabaseContexts(this IServiceCollection services, IWebHostEnvironment environment, ConfigurationManager configuration)
     {
-        if (environment.IsDevelopment() || environment.IsDocker())
+        var useOnlyInMemoryDatabase = false;
+        if (configuration["UseOnlyInMemoryDatabase"] != null)
+        {
+            useOnlyInMemoryDatabase = bool.Parse(configuration["UseOnlyInMemoryDatabase"]!);
+        }
+
+        if (useOnlyInMemoryDatabase || environment.IsDevelopment() || environment.IsDocker())
         {
             // Configure SQL Server (local)
             services.ConfigureLocalDatabaseContexts(configuration);
@@ -38,7 +44,7 @@ public static class ServiceCollectionExtensions
             {
                 var connectionString = configuration[configuration["AZURE_SQL_IDENTITY_CONNECTION_STRING_KEY"] ?? ""];
                 options.UseSqlServer(connectionString, sqlOptions => sqlOptions.EnableRetryOnFailure())
-                                .AddInterceptors(provider.GetRequiredService<DbCallCountingInterceptor>());
+                .AddInterceptors(provider.GetRequiredService<DbCallCountingInterceptor>());
             });
         }
     }
