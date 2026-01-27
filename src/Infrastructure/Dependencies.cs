@@ -11,7 +11,7 @@ public static class Dependencies
 {
     public static void ConfigureLocalDatabaseContexts(this IServiceCollection services, IConfiguration configuration)
     {
-        bool useOnlyInMemoryDatabase = false;
+        bool useOnlyInMemoryDatabase = true;
         if (configuration["UseOnlyInMemoryDatabase"] != null)
         {
             useOnlyInMemoryDatabase = bool.Parse(configuration["UseOnlyInMemoryDatabase"]!);
