@@ -53,4 +53,4 @@ jobs:
           app-name: "eshopdeployattemptwestus2"
           slot-name: "Production"
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_78665AEE8F754C4DAE24FBDEDC5EB7C1 }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILEASIA }}
