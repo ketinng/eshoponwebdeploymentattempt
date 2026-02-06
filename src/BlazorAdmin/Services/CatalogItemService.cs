@@ -72,6 +72,7 @@ public class CatalogItemService : ICatalogItemService
             item.CatalogBrand = brands.FirstOrDefault(b => b.Id == item.CatalogBrandId)?.Name;
             item.CatalogType = types.FirstOrDefault(t => t.Id == item.CatalogTypeId)?.Name;
         }
+        _logger.LogInformation("Retrieved {ItemCount} catalog items from the database.", items.Count);
         return items;
     }
 
