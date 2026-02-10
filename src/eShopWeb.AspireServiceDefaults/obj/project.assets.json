@@ -1009,11 +1009,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud2\\testfolder\\src\\eShopWeb.AspireServiceDefaults\\eShopWeb.AspireServiceDefaults.csproj",
+      "projectUniqueName": "c:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\eShopWeb.AspireServiceDefaults\\eShopWeb.AspireServiceDefaults.csproj",
       "projectName": "eShopWeb.AspireServiceDefaults",
-      "projectPath": "C:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud2\\testfolder\\src\\eShopWeb.AspireServiceDefaults\\eShopWeb.AspireServiceDefaults.csproj",
+      "projectPath": "c:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\eShopWeb.AspireServiceDefaults\\eShopWeb.AspireServiceDefaults.csproj",
       "packagesPath": "C:\\Users\\ketin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud2\\testfolder\\src\\eShopWeb.AspireServiceDefaults\\obj\\",
+      "outputPath": "c:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\eShopWeb.AspireServiceDefaults\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
@@ -1184,7 +1184,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\program files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

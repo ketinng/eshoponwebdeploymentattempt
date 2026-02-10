@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Lw45gWoFTQ=",
+  "dgSpecHash": "INJAeYyLMqU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud2\\testfolder\\src\\BlazorShared\\BlazorShared.csproj",
+  "projectFilePath": "C:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\BlazorShared\\BlazorShared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ketin\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
     "C:\\Users\\ketin\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",

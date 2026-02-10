@@ -12,8 +12,6 @@ using NimblePros.Metronome;
 
 var builder = WebApplication.CreateBuilder(args);
 
-throw new Exception("Cannot move further");
-
 // Add service defaults & Aspire components.
 builder.AddAspireServiceDefaults();
 
