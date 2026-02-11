@@ -4,6 +4,7 @@ using Microsoft.eShopWeb.Infrastructure.Data;
 using Microsoft.eShopWeb.Infrastructure.Data.Queries;
 using Microsoft.eShopWeb.Infrastructure.Logging;
 using Microsoft.eShopWeb.Infrastructure.Services;
+using Microsoft.Extensions.Options;
 
 namespace Microsoft.eShopWeb.Web.Configuration;
 
@@ -24,6 +25,17 @@ public static class ConfigureCoreServices
 
         services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
         services.AddTransient<IEmailSender, LoggerEmailSender>();
+        
+        // Configure OrderItemsReserver settings
+        services.Configure<OrderItemsReserverSettings>(
+            configuration.GetSection(OrderItemsReserverSettings.ConfigSectionName));
+
+        // Register HttpClient for OrderItemsReserverService
+        services.AddHttpClient<IOrderItemsReserverService, OrderItemsReserverService>((serviceProvider, client) =>
+        {
+            var settings = serviceProvider.GetRequiredService<IOptions<OrderItemsReserverSettings>>().Value;
+            client.Timeout = TimeSpan.FromSeconds(settings.TimeoutSeconds);
+        });
 
         return services;
     }

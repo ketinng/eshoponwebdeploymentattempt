@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BtBKJbZ4ND4=",
+  "dgSpecHash": "JviCq/0QyVA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\BlazorAdmin\\BlazorAdmin.csproj",
+  "projectFilePath": "c:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\BlazorAdmin\\BlazorAdmin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ketin\\.nuget\\packages\\blazored.localstorage\\4.5.0\\blazored.localstorage.4.5.0.nupkg.sha512",
     "C:\\Users\\ketin\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
@@ -55,9 +55,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "PackageReference System.Net.Http.Json will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "C:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\BlazorAdmin\\BlazorAdmin.csproj",
+      "projectPath": "c:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\BlazorAdmin\\BlazorAdmin.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\BlazorAdmin\\BlazorAdmin.csproj",
+      "filePath": "c:\\Users\\ketin\\OneDrive\\Desktop\\EPAM_Cloud\\testfolder\\src\\BlazorAdmin\\BlazorAdmin.csproj",
       "libraryId": "System.Net.Http.Json",
       "targetGraphs": [
         "net10.0"
